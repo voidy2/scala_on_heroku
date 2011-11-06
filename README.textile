@@ -39,7 +39,7 @@ h3. 1. stage
 $ bin/sbt clean compile stage
 </pre>
 
-h3. 2. push!!
+h3. 2. push
 
 <pre>
 $ git push heroku master
