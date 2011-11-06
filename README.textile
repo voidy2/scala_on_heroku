@@ -1,0 +1,47 @@
+h1. 実行手順
+
+h2. 1. Simple Build Tool 起動
+
+<pre>
+$ bin/sbt
+</pre>
+
+h2. 2. コンパイル
+
+<pre>
+> compile
+</pre>
+
+h2. 3. http://localhost:8080 に起動
+
+<pre>
+> container:start
+</pre>
+
+h2. 4. ソースコード修正後に挙動を確認したい場合
+
+<pre>
+> compile
+> container:reload /
+</pre>
+
+h2. 5. Simple Build Tool 終了したい場合
+
+<pre>
+> exit
+</pre>
+
+h1. デプロイ手順
+
+h2. 1. stage
+
+<pre>
+$ bin/sbt clean compile stage
+</pre>
+
+h2. 1. push
+
+<pre>
+$ git push heroku master
+</pre>
+
